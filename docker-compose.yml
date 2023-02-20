@@ -1,25 +1,10 @@
 version: '3.3'
 services:
-    bombsquad-viertelfinale:
+    bombsquad-server:
         ports:
-            - '43211:43210/udp'
-        container_name: bombsquad-viertelfinale
+            - '43210:43210/udp'
+        container_name: bombsquad
         volumes:
-            - './viertelfinale-config.yaml:/app/bombsquad-server/config.yaml'
-        image: crazyuploader/bombsquad
-
-    bombsquad-halbfinale:
-        ports:
-            - '43212:43210/udp'
-        container_name: bombsquad-halbfinale
-        volumes:
-            - './halbfinale-config.yaml:/app/bombsquad-server/config.yaml'
-        image: crazyuploader/bombsquad
-
-    bombsquad-finale:
-        ports:
-            - '43213:43210/udp'
-        container_name: bombsquad-finale
-        volumes:
-            - './finale-config.yaml:/app/bombsquad-server/config.yaml'
+            - './config.yaml:/app/bombsquad-server/config.yaml'
+            - './ba_root:/app/bombsquad-server/dist/ba_root'
         image: crazyuploader/bombsquad
