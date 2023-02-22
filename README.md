@@ -1,2 +1,2 @@
-# docker-compose für 1. Trimugglisches Turnier
-bombsquad configs and server in docker-compose
+# Bombsquad 1.7 in docker
+I couldn't find a docker image for bombsquad 1.7 so i made this Dockerfile
