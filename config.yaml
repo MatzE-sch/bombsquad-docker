@@ -37,7 +37,7 @@ party_is_public: false
 # multiple controllers. Also, this number currently includes the server so
 # generally make it 1 bigger than you need. Max-players is not currently
 # exposed but I'll try to add that soon.
-max_party_size: 16
+max_party_size: 99
 
 # Options here are 'ffa' (free-for-all), 'teams' and 'coop' (cooperative)
 # This value is ignored if you supply a playlist_code (see below).
@@ -48,14 +48,14 @@ max_party_size: 16
 # playlist editor in the regular version of the game.
 # This will give you a numeric code you can enter here to host that
 # playlist.
-playlist_code: 409469
+playlist_code: 410720
 
 # Alternately, you can embed playlist data here instead of using codes.
 # Make sure to set session_type to the correct type for the data here.
 #playlist_inline: []
 
 # Whether to shuffle the playlist or play its games in designated order.
-playlist_shuffle: false
+playlist_shuffle: true
 
 # If true, keeps team sizes equal by disallowing joining the largest team
 # (teams mode only).
@@ -80,7 +80,7 @@ auto_balance_teams: false
 
 # Series length in teams mode (7 == 'best-of-7' series; a team must
 # get 4 wins)
-teams_series_length: 3
+teams_series_length: 11
 
 # Points to win in free-for-all mode (Points are awarded per game based on
 # performance)
